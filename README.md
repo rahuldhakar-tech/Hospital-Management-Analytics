@@ -53,8 +53,7 @@ I connected Power BI to SQL Server and built a full visual dashboard using clean
 
 🖼️ Example Dashboard:
 
-![Dashboard Overview](<img width="1161" height="657" alt="12_dashboard_overview" src="https://github.com/user-attachments/assets/5b66558e-5e6b-4d38-ad89-09c1f9d74dbd" />
-)
+[![Dashboard Overview](https://github.com/rahuldhakar-tech/Hospital-Management-Analytics/blob/main/ScreenShots./12_dashboard_overview.png)
 
 ---
 
