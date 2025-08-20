@@ -1,43 +1,102 @@
-# Sales Insights using-SQL & Power-BI
+# Hospital Management Analytics with SQL & Power BI
 
-Project description,functions,queries written,environment used are mentioned in readme.
+This project demonstrates a simple but powerful healthcare analytics dashboard I created **from scratch** using SQL Server and Power BI. It simulates a hospital environment with patients, doctors, appointments, lab tests, and billing data.
 
-### Sales Data - Cleaning & Exploration
-Removing and adding columns as necessary in the tables and preparing the database tables for Analysis.
-Data subset collected in [SQL dump file](https://github.com/PranathiYarravalli20/Sales-Insights-using-Power-BI/blob/main/Database%20dump.sql) and loaded to SQL server for exploring the data tables.
-Tables:
-1. Customers
-2. Date
-3. Markets
-4. Products
-5. Transactions
+---
 
-### SQL queries for data cleaning and exploration
-Data acquired is cleansed using SQL queries here.
-[click here to view code](https://github.com/PranathiYarravalli20/Sales-Insights-using-Power-BI/blob/main/Data%20Cleaning%20%26%20Exploration%20using%20SQL.sql)
+## 📌 Project Overview
 
-### Analysis using SQL
-[Click here to view code](https://github.com/PranathiYarravalli20/Sales-Insights-using-Power-BI/blob/main/Data%20Analysis%20using%20SQL.sql)
-Queries:
-1. All tables and their rows in sales schema
-2. Date range in date table
-3. Revenue generated in 2020 and 2019.
-4. Currency and their count
-5. Total sales amount collected by each market
-6. Sales quantity ordered from each market on each day
-7. Sales across all markets in each year
-8. Categorizing Product sales based on sales quantity in each order
-9. Calculating revenue Contribution percentage for each market across all years
-10. Finding market name that made maximum sales
+- **Domain**: HospitalManagement
+- **Tools Used**: SQL Server, Power BI
+- **Skills Demonstrated**: SQL querying, data modeling, DAX logic, Power BI visualization
+- **Goal**: To uncover insights into hospital operations like doctor workload, billing trends, and patient demographics.
 
-### Data Visualization using [Power BI dashboard](https://github.com/PranathiYarravalli20/Sales-Insights-using-Power-BI/blob/main/Sales%20Insights%20-%20Visualization.pbix)
-Getting data into BI through SQL dump and performing Data Visualization and analysing of hardware store products across different regions, observing profit analysis and revenue trend of the company.
+---
 
-### Insights:
-1. Sales were rapidly decreasing in 2020 compared to 2019 by around 57.7%.
-2. Highest revenue generated from Markets such as Delhi NCR, Mumbai, Ahmedabad, Bhopal, Nagpur, and so on.
-3. Highest quantities sold in the Market such as Delhi NCR, Mumbai, Nagpur, Kochi, Ahmedabad, and so on.
-4. Majority of the sales were takes place in the month of January followed by November and March.
+## 🧱 Project Structure
 
-Dashboard of Performance Tracking of sales for quick view:
-![image](https://user-images.githubusercontent.com/106775145/209099717-295fd41e-fffc-4bdb-83ab-a50bbef24b86.png)
+### 1. SQL Phase
+
+I manually created tables, inserted mock data, and wrote queries to perform:
+
+#### 📗 Section 1: Basic SQL Queries
+- SELECT, WHERE, ORDER BY, ALIAS
+
+#### 📘 Section 2: Intermediate SQL
+- Filtering with multiple conditions
+- Aggregations with `GROUP BY`, `HAVING`
+- Joins (`INNER`, `LEFT`, `RIGHT`, `FULL`, `CROSS`)
+- Subqueries (nested logic)
+- `CASE` statements for categorization
+
+#### 📙 Section 3: Advanced SQL
+- Views
+- Stored Procedures
+- Triggers (AFTER INSERT/UPDATE for automation)
+
+---
+
+## 📊 Power BI Phase
+
+I connected Power BI to SQL Server and built a full visual dashboard using cleaned, transformed data.
+
+### 📌 Key Insights Visualized
+
+| Chart | Description |
+|-------|-------------|
+| **Total Appointments by Doctors** | Measures each doctor's workload. Helpful for staffing and performance monitoring. |
+| **Total Billing by Patients** | Shows which patients contribute the most to revenue. |
+| **Billing Category (Donut Chart)** | Breaks revenue down by cost tiers: Low, Medium, High. |
+| **Patients by Age Group (Pie Chart)** | Distribution of patients across age categories (`young_adults`, `adults`, `seniors`). |
+| **Total Revenue Card** | Displays total billing amount from all patients. |
+| **Interactive Filters** | By doctor name, billing category, and gender for dynamic reporting. |
+
+🖼️ Example Dashboard:
+
+![Dashboard Overview](screenshots/12_dashboard_overview.png)
+
+---
+
+## 📂 Folder Structure
+
+```
+Hospital-Management-SQL-PowerBI/
+│
+├── SQL_Code/
+│   ├── create_tables.sql
+│   ├── insert_data.sql
+│   ├── queries.sql
+│   └── trigger_procedure_view.sql
+│
+├── PowerBI_Dashboard/
+│   ├── powerbi_model.pbix
+│   └── screenshots/
+│       ├── 1_tables.png
+│       ├── 2_insert.png
+│       ├── 3_basic_select.png
+│       ├── 4_join_query.png
+│       ├── 5_groupby_having.png
+│       ├── 6_case_or_subquery.png
+│       ├── 8_powerbi_model_view.png
+│       ├── 9_cleaned_table.png
+│       ├── 10_barchart_doctor_appt.png
+│       ├── 11_billing_category_chart.png
+│       └── 12_dashboard_overview.png
+│
+└── README.md
+```
+
+---
+
+## 🚀 Future Ideas
+
+- Add Excel export option for reports
+- Add patient visit frequency analytics
+- Automate billing trigger email alerts
+- Integrate Python or R for predictive models (e.g., predicting high-cost patients)
+
+---
+
+## 💼 Made For
+
+I built this project to demonstrate my end-to-end capability in **SQL + Power BI** for real-world data analysis in healthcare.
